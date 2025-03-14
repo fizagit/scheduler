@@ -1,127 +1,41 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    color: #333;
+    font-family: Arial, sans-serif;
     text-align: center;
+    background: #f4f4f4;
+    color: #333;
     transition: background 0.3s, color 0.3s;
 }
 
 header {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    
-
-}
-
-#dark-mode-toggle {
-    background: #222;
+    background: #007bff;
     color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+    padding: 10px;
 }
 
 main {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
     padding: 20px;
-}
-
-.event {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.event:hover {
-    transform: scale(1.05);
-}
-
-button {
-    background: #ff758c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
 }
 
-button:hover {
-    background: #ff5c72;
+form input, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
 }
 
-/* Dark Mode */
-.dark-mode {
-    background: #222;
-    color: #fff;
-}
-
-.dark-mode header {
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.dark-mode .event {
-    background: rgba(50, 50, 50, 0.7);
-}
-
-.dark-mode button {
-    background: #555;
-}
-#event-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 300px;
-}
-
-#event-list {
+ul {
     list-style: none;
     padding: 0;
 }
 
-.event-item {
-    background: lightgray;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-
-form {
-    margin: 20px auto;
-    max-width: 400px;
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-input, button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+li {
+    background: #ddd;
+    margin: 5px 0;
     padding: 10px;
 }
 
@@ -129,9 +43,24 @@ button {
     background: #007bff;
     color: white;
     border: none;
+    padding: 10px;
     cursor: pointer;
 }
 
 button:hover {
     background: #0056b3;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode main {
+    background: #333;
+}
+
+.dark-mode li {
+    background: #444;
 }
